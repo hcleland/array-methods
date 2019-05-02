@@ -18,3 +18,24 @@ document.querySelector("#lessThan19").innerHTML = lessThan19.join("...");
 
 const multiplySubtract = lessThan19.map(integer => (integer * 1.5) - 1);
 document.querySelector("#multiply").innerHTML = multiplySubtract.join("...");
+
+// Then output (either in the DOM or the console) the sum of all the resulting numbers
+
+// const finalSum = ()
+// document.querySelector("#sum").innerHTML = .join("...");
+
+
+console.log(multiplySubtract);
+
+function getSum(total, num) {
+    return total + num;
+}
+document.querySelector("#sum").innerHTML = multiplySubtract.reduce(getSum);
+
+// let string = "Today is Thursday."
+
+// let regex = /[aeiou]/g;
+// let found = string.match(regex);
+
+// console.log(found);
+
